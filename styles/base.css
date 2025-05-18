@@ -19,8 +19,7 @@
     color: white;
     padding: 1rem;
     text-align: center;
-    font-size: 20px
-    
+    font-size: 20px;
   }
   
   header .highlight {
@@ -33,7 +32,7 @@
     justify-content: center;
     gap: 6em;
     margin-top: 1rem;
-    font-size: 30px
+    font-size: 30px;
   }
   
   nav a {
@@ -54,7 +53,7 @@
     padding: 0;
     gap: 0;
   }
-
+  
   .card1 p {
     font-size: 30px;
   }
@@ -65,9 +64,9 @@
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 100%; /*Ocupan cada una la mitad del ancho de la pantalla */
-    height: auto; /* Altura del 80% del viewport */
-    max-width: none; /* Elimina la restricción de ancho */
+    width: 100%;
+    height: auto;
+    max-width: none;
     box-sizing: border-box;
   }
   
@@ -80,15 +79,19 @@
   }
   
   .image-container1 img {
-    width: 320px;
+    width: 250px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
+  
   .card1 h2 {
     text-align: center;
     font-size: 30px;
   }
-
+  .image-container2 p {
+    font-size: 22px;
+  }
+  
   .card2 h2 {
     text-align: center;
     font-size: 30px;
@@ -98,8 +101,6 @@
   .location2 h2 {
     align-content: center;
   }
-  
- 
   
   .location-container2 {
     display: flex;
@@ -118,9 +119,9 @@
     margin-top: 0.3rem;
     font-style: italic;
   }
-  h1  { 
+  
+  h1 {
     font-size: 30px;
-
   }
   
   /* Recursos Web */
@@ -132,7 +133,6 @@
   
   .card2 li {
     margin-bottom: 0.5rem;
-    
   }
   
   .card2 a {
@@ -151,6 +151,29 @@
     color: white;
     padding: 1rem;
     margin-top: 2rem;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .location-container1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .location-container2 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 1em;
+      font-size: 24px;
+    }
   }
   
