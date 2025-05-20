@@ -3,63 +3,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #f0f4f8;
     color: #333;
     padding: 0 1rem;
-  }
-  
-  /* Header */
-  header {
+}
+
+/* Header */
+header {
     background-color: #0a3d62;
     color: white;
     padding: 1rem;
     text-align: center;
     font-size: 20px;
-  }
-  
-  header .highlight {
+}
+
+header .highlight {
     color: #f7d794;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 6em;
     margin-top: 1rem;
     font-size: 30px;
-  }
-  
-  nav a {
+}
+
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     text-decoration: underline;
-  }
-  
-  /* Secciones principales */
-  main {
+}
+
+/* Secciones principales */
+main {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Evita que se apilen */
     margin-top: 2rem;
     padding: 0;
     gap: 0;
-  }
-  
-  .card1 p {
+}
+
+.card1 p {
     font-size: 30px;
-  }
-  
-  section.card1,
-  section.card2 {
+}
+
+section.card1,
+section.card2 {
     background-color: white;
     padding: 3rem;
     border-radius: 10px;
@@ -68,127 +68,113 @@
     height: auto;
     max-width: none;
     box-sizing: border-box;
-  }
-  
-  /* About Me */
-  .location-container1 {
+}
+
+/* About Me */
+.location-container1 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
-    flex-wrap: nowrap;
-  }
-  
-  .image-container1 img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
+}
+
+.image-container1 img {
+    width: 250px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .card1 h2 {
+}
+
+.card1 h2 {
     text-align: center;
     font-size: 30px;
-  }
-  
-  .image-container2 p {
+}
+
+.image-container2 p {
     font-size: 22px;
-  }
-  
-  .card2 h2 {
+}
+
+.card2 h2 {
     text-align: center;
     font-size: 30px;
-  }
-  
-  /* Toloria */
-  .location2 h2 {
+}
+
+/* Toloria */
+.location2 h2 {
     align-content: center;
-  }
-  
-  .location-container2 {
+}
+
+.location-container2 {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .image-container2 img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+}
+
+.image-container2 img {
+    width: 200px;
     border: 1px solid #ccc;
-  }
-  
-  .caption {
+}
+
+.caption {
     font-size: 0.8rem;
     text-align: center;
     margin-top: 0.3rem;
     font-style: italic;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 30px;
-  }
-  
-  /* Recursos Web */
-  .card2 ul {
+}
+
+/* Recursos Web */
+.card2 ul {
     list-style: none;
     padding-left: 1rem;
     font-size: 30px;
-  }
-  
-  .card2 li {
+}
+
+.card2 li {
     margin-bottom: 0.5rem;
-  }
-  
-  .card2 a {
+}
+
+.card2 a {
     color: #2980b9;
     text-decoration: none;
-  }
-  
-  .card2 a:hover {
+}
+
+.card2 a:hover {
     text-decoration: underline;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     text-align: center;
     background-color: #0a3d62;
     color: white;
     padding: 1rem;
     margin-top: 2rem;
     font-size: 1.5rem;
-  }
-  
-  /* Media query para móviles */
-  @media (max-width: 768px) {
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
     main {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .location-container1,
     .location-container2 {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     nav ul {
-      flex-direction: column;
-      gap: 1.5rem;
-      font-size: 1.5rem;
+        flex-direction: column;
+        gap: 1.5rem; /* 24px → rem */
+        font-size: 1.5rem;
     }
-  
+
     section.card1,
     section.card2 {
-      padding: 1.5rem;
+        padding: 1.5rem; /* Reducción móvil */
     }
-  
-    .image-container1 img,
-    .image-container2 img {
-      max-width: 100%;
-    }
-  }
-  
+}
