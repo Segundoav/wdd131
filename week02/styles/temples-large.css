@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+    header {
+      flex-wrap: nowrap;
+    }
+  
+    #menu-toggle {
+      display: none;
+    }
+  
+    nav {
+      width: auto;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: auto;
+    }
+  
+    nav a {
+      padding: 0.5rem 1rem;
+    }
+  
+    .temple-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .temple-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
