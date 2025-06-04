@@ -1,0 +1,60 @@
+/* Fuente base */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Banner superior */
+  .banner {
+    background-color: #f7f5d9;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Encabezados */
+  h1 {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    color: #2222cc;
+    padding-left: 1rem;
+    margin-top: 0;
+    grid-column: 1 / -1;
+    text-align: left; /* Se corrigió la alineación */
+  }
+  
+  /* Layout de columnas con grid */
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  article, aside {
+    padding: 1rem;
+  }
+  
+  .callout {
+    background-color: #eeeeee;
+    color: #000000;
+    border-left: 5px solid #999999;
+    padding: 1rem;
+    grid-column: 1 / -1;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+    border-top: 1px solid #ccc;
+  }
+  
