@@ -1,0 +1,73 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F3F4F6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #1E3ABA;
+  color: #FFFFFF;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Sections */
+main section {
+  margin: 2rem;
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #1E3ABA;
+}
+
+/* List items */
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Properties grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.property {
+  background-color: #F3F4F6;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.property img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #1E3ABA;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
