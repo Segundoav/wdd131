@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+input, button {
+    margin: 14px;
+    padding: 12px;
+    font-size: 26px;
+    display: flex;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 30px;
+}
+
+button.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    background: darkred;
+}
