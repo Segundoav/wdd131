@@ -7,17 +7,17 @@ const list = document.querySelector('#chapterList');
 button.addEventListener('click', () => {
     const chapterName = input.value.trim();
 
-    // Verificar que el campo no esté vacío
+    // Verify that the field is not empty.
     if (chapterName) {
         const li = document.createElement('li');
         li.textContent = chapterName;
 
-        // Crear botón de eliminar
+        // Create delete button
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'X';
         deleteButton.classList.add('delete-btn');
         
-        // Agregar evento para eliminar el capítulo
+        // Add event to delete chapter
         deleteButton.addEventListener('click', () => {
             li.remove();
         });
@@ -25,7 +25,7 @@ button.addEventListener('click', () => {
         li.append(deleteButton);
         list.append(li);
 
-        // Limpiar el campo de entrada
+        // Clear the input field
         input.value = '';
         input.focus();
     } else {
