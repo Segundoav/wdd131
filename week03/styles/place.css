@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #003566; /* Un azul para Cusco */
+    --accent-color: #ffc300;  /* Un dorado para resaltar */
+    --font-main: 'Roboto', sans-serif;
+}
+
 /* Base font */
 body {
     font-family: 'Roboto', sans-serif;
