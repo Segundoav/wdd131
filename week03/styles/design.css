@@ -1,0 +1,83 @@
+/* Fuente base */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Encabezado superior */
+  header {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Encabezados */
+  h1 {
+    margin: 0;
+  }
+  
+  h2 {
+    color: #2222cc;
+    padding-left: 1rem;
+    margin-top: 0;
+    grid-column: 1 / span 2;
+    text-align: left;
+  }
+  
+  /* Imagen principal */
+  .hero {
+    grid-column: 1 / -1;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Layout de columnas con grid */
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  article,
+  aside {
+    padding: 1rem;
+  }
+  
+  .callout {
+    background-color: #eeeeee;
+    color: #000000;
+    border-left: 5px solid #999999;
+    padding: 1rem;
+    grid-column: 1 / -1;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Ícono del clima para dispositivos móviles */
+  .icon-mobile {
+    width: 50px;
+    height: auto;
+  }
+  
+  /* Ícono ancho solo visible en pantallas grandes */
+  @media (max-width: 600px) {
+    .icon-wide {
+      display: none;
+    }
+  }
+  
