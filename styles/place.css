@@ -1,0 +1,89 @@
+/* Base font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Top header */
+header {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Headings */
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #2222cc;
+    padding-left: 1rem;
+    margin-top: 0;
+    grid-column: 1 / -1;
+    text-align: left;
+}
+
+/* Main image */
+.hero img {
+    width: 100%;
+    height: 300px;     /* Adjust this height as you like */
+    object-fit: cover; /* Maintains proportion without distorting the alpaca */
+    display: block;
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;     /* Controlled height */
+    object-fit: cover; /* Elegant image adjustment */
+    display: block;
+}
+
+/* Column layout with grid */
+/* This centers all the page content */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1000px; /* Prevents stretching too much */
+    margin: 0 auto;    /* Centers the block on the monitor */
+}
+
+article,
+aside {
+    padding: 1rem;
+}
+
+.callout {
+    background-color: #eeeeee;
+    color: #000000;
+    border-left: 5px solid #999999;
+    padding: 1rem;
+    grid-column: 1 / -1;
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+/* Weather icon for mobile devices */
+.icon-mobile {
+    width: 50px;
+    height: auto;
+}
+
+/* Wide icon only visible on large screens */
+@media (max-width: 600px) {
+    .icon-wide {
+        display: none;
+    }
+}
