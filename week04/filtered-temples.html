@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered Temples - WDD 131</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Filtered Temple Album</h1>
+        <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <ul id="main-nav">
+                <li><a href="#" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <div class="temple-grid" id="templeGrid">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Temple Album - Segundo Alvarez</p>
+        <p>The Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
