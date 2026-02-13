@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    
+</head>
+<body>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Name of product</label>
+            <select name="product" id="product" required>
+                <option value="" disabled selected>Select a product...</option>
+            </select>
+        <fieldset>
+            <legend>Overall reading</legend>
+            <label><input type="radio" name="rating" value="1" required> ⭐</label>
+            <label><input type="radio" name="rating" value="2" required> ⭐⭐</label>
+            <label><input type="radio" name="rating" value="3" required> ⭐⭐⭐</label>
+            <label><input type="radio" name="rating" value="4" required> ⭐⭐⭐⭐</label>
+            <label><input type="radio" name="rating" value="5" required> ⭐⭐⭐⭐⭐</label>
+
+        </fieldset>
+
+        <label for="installation-date">date of installation</label>
+        <input type="date" id="installation-date" name="installation-date" required>
+
+        <fieldset>
+            <legend>Which features did you find useful</legend>
+            <label><input type="checkbox" name="features" value="durability">Durability</label>
+            <label><input type="checkbox" name="features" value="design">Design</label>
+            <label><input type="checkbox" name="features" value="ease">Ease of Use</label>
+            <label><input type="checkbox" name="features" value="performance">Performance</label>
+
+        </fieldset>
+
+        <label for="written-review">written-review</label>
+        <textarea name="written-review" id="written-review"></textarea>
+
+        <label for="username">Userame</label>
+        <input type="text" id="username" name="username">
+        <input type="submit" value="Submit review">
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | BYU-IDAHO</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>
